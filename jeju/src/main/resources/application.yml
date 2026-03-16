@@ -26,4 +26,4 @@ spring:
       max-file-size: 20MB
       max-request-size: 200MB
 file:
-  upload-dir: C:/uploads/jeju/
+  upload-dir: /uploads/jeju/
