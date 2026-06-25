@@ -1,0 +1,13 @@
+.git
+.DS_Store
+**/.DS_Store
+jeju/.gradle
+jeju/build
+jeju/C:
+jeju/.idea
+jeju/HELP.md
+**/*.iml
+**/*.iws
+**/*.ipr
+**/out
+**/bin
