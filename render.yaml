@@ -2,8 +2,7 @@ services:
   - type: web
     name: jeju
     runtime: docker
-    dockerfilePath: ./jeju/Dockerfile
-    dockerContext: .
+    rootDir: jeju
     plan: free
     healthCheckPath: /
     autoDeployTrigger: commit
