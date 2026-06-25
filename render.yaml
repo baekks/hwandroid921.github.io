@@ -1,0 +1,25 @@
+services:
+  - type: web
+    name: jeju
+    runtime: docker
+    rootDir: jeju
+    plan: free
+    healthCheckPath: /
+    autoDeployTrigger: commit
+    envVars:
+      - key: SPRING_DATASOURCE_URL
+        sync: false
+      - key: SPRING_DATASOURCE_USERNAME
+        sync: false
+      - key: SPRING_DATASOURCE_PASSWORD
+        sync: false
+      - key: SPRING_JPA_HIBERNATE_DDL_AUTO
+        value: update
+      - key: SPRING_JPA_SHOW_SQL
+        value: "false"
+      - key: SPRING_JPA_PROPERTIES_HIBERNATE_FORMAT_SQL
+        value: "false"
+      - key: SPRING_THYMELEAF_CACHE
+        value: "true"
+      - key: FILE_UPLOAD_DIR
+        value: /tmp/jeju/uploads/
